@@ -1,5 +1,7 @@
 # Ad Life Stress Module
 
+[demo](https://dgilfoy.github.io/life-stress-ad-assessment/dist/#/)
+
 ## Primary modules used (check 'em out)
 * [Reactjs](https://facebook.github.io/react)
 * [Reduxjs](http://redux.js.org/docs/basics/)
