@@ -4,7 +4,8 @@ const categories = [
   {id: 2, title: 'Assessments', path: 'main/assessments', featured: false, img: require('../images/2000px-Checklist_Noun_project_5166.svg.png')},
   {id: 3, title: 'Library', path: 'main/library', featured: false, img: require('../images/2000px-Book_font_awesome.svg.png')},
   {id: 4, title: 'Resources', path: 'main/resources', featured: false, img: require('../images/Sharing-icon.svg.png')},
-  {id: 5, title: 'App Hub',  path: 'https://apphub.tee2.org', featured: false, img: require('../images/Sharing-icon.svg.png')}
+  {id: 5, title: 'App Hub',  path: 'https://apphub.tee2.org', featured: false, img: require('../images/Sharing-icon.svg.png')},
+  {id: 6, title: 'GitHub Repo',  path: 'https://github.com/dgilfoy/life-stress-ad-assessment', featured: false, img: require('../images/Sharing-icon.svg.png')}
 ];
 const categoriesMap = categories.reduce((acc,cat) => {
   acc[cat.id] = cat
@@ -21,6 +22,7 @@ export const mainMenu = [
     {id: 7, type: 'link' , item: categoriesMap[4]},
     {id: 8, type: 'divider' , item: {}},
     {id: 9, type: 'link_absolute' , item: categoriesMap[5]},
+    {id: 9, type: 'link_absolute' , item: categoriesMap[6]},
     {id: 10, type: 'divider' , item: {}}
 ];
 
