@@ -5,6 +5,6 @@ export const modules = [
     The Life Stress Assessment, and each of the related assessments below, takes about five minutes to complete; recommendations follow based on your results.`
   },
   {
-    id: 2, title: 'Test Bob', img: require('../images/intro-panic.png'), assessments: [2,1,3],videos : 'lifeStress',
+    id: 2, title: 'Test Bob', img: require('../images/intro-panic.png'), assessments: [2,1,3],videos : 'testBob',
     content: `Test Bob McGee Module, lorum ipsum, etc.`}
 ];

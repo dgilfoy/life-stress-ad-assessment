@@ -22,8 +22,12 @@ const stateToProps = (state, ownProps) => {
   let module = modules.filter(mod => ( parseInt(ownProps.params.id) === mod.id)),
     modVidsStr = module[0].videos;
   return {
-    videos: videos[modVidsStr + 'Vids'], // add default logic here eventually, so there's a fallback if an object with this name does not exist
-    cols: getCols(state.device)
+    videos: videos[modVidsStr + 'Vids'].map(item => {
+      item.img = require('../res/images/videos/' + item.img);
+      return item;
+    }), // add default logic here eventually, so there's a fallback if an object with this name does not exist
+    cols: getCols(state.device),
+    moduleID : module[0].id
   }
 }
 const dispatchToProps = (dispatch) => {

@@ -15,6 +15,7 @@ interface MyProps {
   appBarTitle(title: string): any;
   videos: any[];
   cols: number;
+  moduleID : number;
 }
 
 interface MyState {
@@ -31,8 +32,7 @@ export default class Videos extends React.Component<MyProps, MyState> {
 
   render(){
 
-  var {videos, appBarTitle, cols} = this.props;
-    console.log(videos);
+  var {videos, appBarTitle, cols, moduleID} = this.props;
     return (
     <div>
       <GridList
@@ -41,7 +41,7 @@ export default class Videos extends React.Component<MyProps, MyState> {
 
         {videos.map((tile) => (
 
-          <Link key={tile.id} to={'/main/video/'+tile.id}  cols={tile.featured ? 1 : 1} >
+          <Link key={tile.id} to={'/main/video/'+ moduleID + '/' +tile.id}  cols={tile.featured ? 1 : 1} >
             <GridTile
               
               
