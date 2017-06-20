@@ -33,7 +33,7 @@ export default class AssessmentModules extends React.Component<Props, State> {
             {modules.map(tile => {
               return (
                 <Link to={'/main/module/' + tile.id} key={tile.image}>
-                <GridTile
+                <GridTile key={tile.id}
                   title={tile.title}
                 >
                   <img src={tile.image} />

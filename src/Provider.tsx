@@ -1,5 +1,6 @@
 import Theme from './components/Theme';
 import Home from './containers/Home';
+import AssessmentModules from './containers/AssessmentModules';
 import AppBarPage from './components/AppBarPage';
 import Dashboard from './components/Dashboard';
 import NotFound from './components/NotFound';
@@ -111,7 +112,7 @@ const siteRoutes = [
     component: Theme,
     indexRoute: Home,
     childRoutes: [
-      syncRoute('/',PageContainer, quickRoutes, Home),
+      syncRoute('/',PageContainer, quickRoutes, AssessmentModules),
       syncRoute('/main',PageContainer, mainSubRoutes,Dashboard),
       syncRoute('/debug',PageContainer, [],Debug),
       syncRoute('*',PageContainer,[],NotFound)

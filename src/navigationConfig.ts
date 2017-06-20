@@ -2,8 +2,8 @@ export default {
   '1': {
     id: '1',
     name: 'Home',
-    routes: ['/main/home', '/', '/intro'],
-    pathname: '/main/home',
+    routes: ['/main/modules', '/', '/intro'],
+    pathname: '/main/modules',
     level: 0,
     childrenIds: [],
     parentId: null
