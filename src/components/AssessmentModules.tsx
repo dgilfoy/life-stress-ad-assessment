@@ -3,8 +3,7 @@ import {GridList, GridTile} from 'material-ui/GridList';
 import { Link } from 'react-router';
 
 export interface Props { 
-   assessments: any;
-   title : any;
+   modules: any;
    appBarTitle(msg: string): any;
    pathOnTouchTap(path:string): any
    cols: number;
@@ -16,24 +15,24 @@ export interface State {
 
 // 'HelloProps' describes the shape of props.
 // State is never set so we use the 'undefined' type.
-export default class Assessments extends React.Component<Props, State> {
+export default class AssessmentModules extends React.Component<Props, State> {
     componentWillMount () {
-      this.props.appBarTitle( this.props.title + ' Assessments');
+      this.props.appBarTitle('Assessment Modules');
     }
     componentWillReceiveProps(nextProps){ //not necessary unless title changes
-      this.props.appBarTitle( this.props.title + ' Assessments');
+      this.props.appBarTitle('Assessment Modules');
     }
     render() {
-      const {assessments,pathOnTouchTap,cols} = this.props;
+      const {modules,pathOnTouchTap,cols} = this.props;
       return (
 
           <GridList
             cols={cols}
             cellHeight={200}
           >
-            {assessments.map(tile => {
+            {modules.map(tile => {
               return (
-                <Link to={'/main/assessment/' + tile.id} key={tile.image}>
+                <Link to={'/main/module/' + tile.id} key={tile.image}>
                 <GridTile
                   title={tile.title}
                 >

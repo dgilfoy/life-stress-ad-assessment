@@ -1,5 +1,4 @@
-import Assessments from '../components/Assessments';
-import {assessments, assessmentIds} from '../res/data/assessments';
+import AssessmentModules from '../components/AssessmentModules';
 import {modules} from '../res/data/modules';
 import {connect} from 'react-redux';
 import { push } from 'react-router-redux';
@@ -16,24 +15,16 @@ const getCols = (device) => {
   }
   return 1
 }
-
-const stateToProps = (state, ownProps) => {
-  let module = modules.filter(mod => ( parseInt(ownProps.params.id) === mod.id)),
-    moduleAssessments = Object.keys(module[0].assessments).map(id=>{
-      return assessments[module[0].assessments[id]];
-  });
+const stateToProps = (state) => {
   return {
-    title: module[0].title,
-    assessments: moduleAssessments,
+    modules: modules,
     cols: getCols(state.device)
   }
 }
-
 const dispatchToProps = (dispatch) => {
   return {
   }
 }
-
 export default connect(stateToProps,dispatchToProps)
 
-(Assessments);
+(AssessmentModules);

@@ -56,7 +56,6 @@ interface MyState {
   [propName: string]: any;
 }
 
-
 if(__INCLUDE_SERVICE_WORKER__){ // __INCLUDE_SERVICE_WORKER__ and other __VAR_NAME__ variables are used by webpack durring the build process. See <root>/webpack-production.config.js
   if ('serviceWorker' in navigator) {
     if (__DEVTOOLS__) {
@@ -86,25 +85,24 @@ if(__INCLUDE_SERVICE_WORKER__){ // __INCLUDE_SERVICE_WORKER__ and other __VAR_NA
   }
 }
 
-
 const asyncRoute = asynRouteMaker({});
-
 
 const quickRoutes = [
 
 ];
 
-
 const mainSubRoutes = [
 
   asyncRoute('library',System.import('./containers/Book')),
   asyncRoute('library/:open',System.import('./containers/Book')),
-  asyncRoute('assessments',System.import('./containers/Assessments')),
+  asyncRoute('assessments/:id',System.import('./containers/Assessments')),
   asyncRoute('assessment/:id',System.import('./containers/Assessment')),
   asyncRoute('assessmentresult/:id',System.import('./containers/AssessmentResult')),
   asyncRoute('videos',System.import('./containers/Videos')),
   asyncRoute('videos/:id',System.import('./containers/Video')),
-  asyncRoute('resources',System.import('./containers/Resources'))
+  asyncRoute('resources',System.import('./containers/Resources')),
+  asyncRoute('modules',System.import('./containers/AssessmentModules')),
+  asyncRoute('module/:id',System.import('./containers/AssessmentModule'))
 
 ];
 
@@ -121,15 +119,14 @@ const siteRoutes = [
   }
 ];
 
-
 const history = syncHistoryWithStore(hashHistory, store);
 
 export default class AppProvider extends React.Component<MyProps,  MyState>{
   render(){
    return (
-            <Provider store={store}>
-              <Router history={history} routes={siteRoutes} />
-            </Provider>
-           );
+    <Provider store={store}>
+      <Router history={history} routes={siteRoutes} />
+    </Provider>
+    );
   }
 }

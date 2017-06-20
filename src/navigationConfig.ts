@@ -11,7 +11,7 @@ export default {
   '2': {
     id: '2',
     name: 'Assessments',
-    routes: ['/main/assessments'],
+    routes: [new RegExp('/main/assessments/[0-9]+')],
     level: 1,
     pathname: '/main/assessments',
     childrenIds: ['6']
@@ -62,6 +62,22 @@ export default {
     routes: [new RegExp('/main/assessmentresult/[0-9]+')],
     level: 2,
     pathname: '/main/assessmentresult',
+    childrenIds: []
+  },
+  '9': {
+    id: '9',
+    name: 'Assessment Modules',
+    routes: ['/main/modules'],
+    level: 2,
+    pathname: '/main/modules',
+    childrenIds: []
+  },
+  '10': {
+    id: '10',
+    name: 'Assessment Module',
+    routes: [new RegExp('/main/module/[0-9]+')],
+    level: 2,
+    pathname: '/main/module',
     childrenIds: []
   }
 };
