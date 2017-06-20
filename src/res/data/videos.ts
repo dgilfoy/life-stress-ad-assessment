@@ -1,4 +1,4 @@
-const data = [
+export const lifeStressVids = [
   {
     "id":1,
     "img":"1041122098001_1125537389001_vs-1125522077001.jpg",
@@ -145,4 +145,4 @@ const data = [
     "author":"T2","url":"","featured":false},
 ];
 
-export default data;
+export default lifeStressVids;

@@ -41,7 +41,7 @@ export default class Videos extends React.Component<MyProps, MyState> {
 
         {videos.map((tile) => (
 
-          <Link key={tile.id} to={'/main/videos/'+tile.id}  cols={tile.featured ? 1 : 1} >
+          <Link key={tile.id} to={'/main/video/'+tile.id}  cols={tile.featured ? 1 : 1} >
             <GridTile
               
               

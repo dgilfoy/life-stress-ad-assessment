@@ -99,8 +99,8 @@ const mainSubRoutes = [
   asyncRoute('assessments/:id',System.import('./containers/Assessments')),
   asyncRoute('assessment/:id',System.import('./containers/Assessment')),
   asyncRoute('assessmentresult/:id',System.import('./containers/AssessmentResult')),
-  asyncRoute('videos',System.import('./containers/Videos')),
-  asyncRoute('videos/:id',System.import('./containers/Video')),
+  asyncRoute('videos/:id',System.import('./containers/Videos')),
+  asyncRoute('video/:id',System.import('./containers/Video')),
   asyncRoute('resources',System.import('./containers/Resources')),
   asyncRoute('modules',System.import('./containers/AssessmentModules')),
   asyncRoute('module/:id',System.import('./containers/AssessmentModule'))

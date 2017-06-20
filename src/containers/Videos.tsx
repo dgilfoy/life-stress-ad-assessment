@@ -1,5 +1,6 @@
 import Videos from '../components/Videos';
-import {videos, videoIds} from '../res/data/video';
+import * as videos from '../res/data/videos';
+import {modules} from '../res/data/modules';
 import {connect} from 'react-redux';
 import { push } from 'react-router-redux';
 
@@ -17,9 +18,11 @@ const getCols = (device) => {
   return 1;
 }
 
-const stateToProps = (state) => {
+const stateToProps = (state, ownProps) => {
+  let module = modules.filter(mod => ( parseInt(ownProps.params.id) === mod.id)),
+    modVidsStr = module[0].videos;
   return {
-    videos: videoIds.map(id => videos[id]),
+    videos: videos[modVidsStr + 'Vids'], // add default logic here eventually, so there's a fallback if an object with this name does not exist
     cols: getCols(state.device)
   }
 }
