@@ -1,5 +1,5 @@
 import BasicPage from '../components/BasicPage';
-import {homePage} from '../res/data/page';
+import {homePage} from '../res/page';
 import {connect} from 'react-redux';
 import { push } from 'react-router-redux';
 

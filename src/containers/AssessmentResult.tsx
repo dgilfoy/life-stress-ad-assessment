@@ -1,5 +1,5 @@
 import AssessmentResult from '../components/AssessmentResult';
-import {assessments, assessmentIds} from '../res/data/assessments';
+import {assessments, assessmentIds} from '../res/assessments';
 import {connect} from 'react-redux';
 import { push } from 'react-router-redux';
 

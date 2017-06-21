@@ -39,7 +39,7 @@ export default class Videos extends React.Component<MyProps, MyState> {
         cols={cols}
       >
 
-        {videos.map((tile) => (
+        { videos.map((tile) => (
 
           <Link key={tile.id} to={'/main/video/'+ moduleID + '/' +tile.id}  cols={tile.featured ? 1 : 1} >
             <GridTile

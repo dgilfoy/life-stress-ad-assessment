@@ -1,6 +1,6 @@
 import {connect} from 'react-redux';
 import { push } from 'react-router-redux';
-import book from '../res/data/book';
+import book from '../res/book';
 import Book from '../components/Book';
 
 const stateToProps = (state,ownProps) => {

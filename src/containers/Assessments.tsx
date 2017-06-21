@@ -1,6 +1,6 @@
 import Assessments from '../components/Assessments';
-import {assessments, assessmentIds} from '../res/data/assessments';
-import {modules} from '../res/data/modules';
+import {assessments, assessmentIds} from '../res/assessments';
+import {modules} from '../res/modules';
 import {connect} from 'react-redux';
 import { push } from 'react-router-redux';
 const getCols = (device) => {

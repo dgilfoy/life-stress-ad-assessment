@@ -6,7 +6,8 @@ import ArrowBack from 'material-ui/svg-icons/navigation/arrow-back';
 import { Link } from 'react-router';
 import MenuDrawer from '../components/MenuDrawer';
 import MenuItem from 'material-ui/MenuItem';
-import categoriesData,{mainMenu} from '../res/data/categories';
+import categoriesData,{mainMenu} from '../res/categories';
+import {modules} from '../res/modules';
 import {connect} from 'react-redux';
 import { push } from 'react-router-redux';
 import Divider from 'material-ui/Divider';
@@ -18,6 +19,7 @@ interface Props {
   pathOnTouchTap(path:string): any
   appConfig: any;
   parentRoute: any;
+  modules : any;
 }
 
 interface State {
@@ -64,7 +66,7 @@ const backIcon = (path) => {
 class AppContainer extends React.Component<Props, State>{
   render(){
     
-    const {menuItems, categories, pathOnTouchTap,appConfig,parentRoute} = this.props;
+    const {menuItems, categories, pathOnTouchTap,appConfig,parentRoute, modules} = this.props;
 
     const leftIcon = !parentRoute ? createMenuItems(menuItems,pathOnTouchTap) : backIcon(parentRoute.pathname) ;
     return <AppBarPage leftIcon={leftIcon} categories={categories} pathOnTouchTap={pathOnTouchTap} appConfig={appConfig} >
@@ -80,7 +82,8 @@ const stateToProps = (state) => {
     appConfig: {
       parentSite: 'http://afterdeployment.dcoe.mil'
     },
-    parentRoute: state.navigation.paths.parent
+    parentRoute: state.navigation.paths.parent,
+    modules : modules
   }
 }
 const dispatchToProps = (distatch,ownProps) => {

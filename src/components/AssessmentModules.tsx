@@ -24,6 +24,7 @@ export default class AssessmentModules extends React.Component<Props, State> {
     }
     render() {
       const {modules,pathOnTouchTap,cols} = this.props;
+      console.log(this.props);
       return (
 
           <GridList
@@ -36,7 +37,7 @@ export default class AssessmentModules extends React.Component<Props, State> {
                 <GridTile key={tile.id}
                   title={tile.title}
                 >
-                  <img src={tile.img} />
+                  <img src={require('../images/'+tile.img)} />
                 </GridTile>
                 </Link>
               );

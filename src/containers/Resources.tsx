@@ -1,5 +1,5 @@
 import PageWithLinks from '../components/PageWithLinks';
-import {resourcesPage} from '../res/data/page';
+import {resourcesPage} from '../res/page';
 import {connect} from 'react-redux';
 import { push } from 'react-router-redux';
 

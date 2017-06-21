@@ -1,6 +1,6 @@
 import Videos from '../components/Videos';
-import * as videos from '../res/data/videos';
-import {modules} from '../res/data/modules';
+import * as videos from '../res/videos';
+import {modules} from '../res/modules';
 import {connect} from 'react-redux';
 import { push } from 'react-router-redux';
 
@@ -23,7 +23,7 @@ const stateToProps = (state, ownProps) => {
     modVidsStr = module[0].videos;
   return {
     videos: videos[modVidsStr + 'Vids'].map(item => {
-      item.img = require('../res/images/videos/' + item.img);
+      item.img = require('../images/videos/' + item.img); //not sure this'll work in webpack, which is probably why jack had the video.ts file in the data dir.
       return item;
     }), // add default logic here eventually, so there's a fallback if an object with this name does not exist
     cols: getCols(state.device),

@@ -1,6 +1,6 @@
 import Assessment from '../components/Assessment';
 import {ItemInterface} from '../components/Assessment';
-import {assessments} from '../res/data/assessments';
+import {assessments} from '../res/assessments';
 import {connect} from 'react-redux';
 import { push } from 'react-router-redux';
 import {ValidationResultInterface} from '../components/Form';

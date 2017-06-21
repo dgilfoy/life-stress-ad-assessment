@@ -1,6 +1,6 @@
 import Video from '../components/Video';
-import * as videos from '../res/data/videos';
-import {modules} from '../res/data/modules';
+import * as videos from '../res/videos';
+import {modules} from '../res/modules';
 import {connect} from 'react-redux';
 import { push } from 'react-router-redux';
 

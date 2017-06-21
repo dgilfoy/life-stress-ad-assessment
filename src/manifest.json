@@ -2,47 +2,47 @@
   "name": "Life Stress Module",
   "short_name": "Stress Module",
   "icons": [{
-    "src": "[[ ./res/images/Icon_Family_128.png ]]",
+    "src": "[[ ./images/Icon_Family_128.png ]]",
       "sizes": "128x128",
       "type": "image/png"
     }, {
-      "src": "[[ ./res/images/Icon_Family_144.png ]]",
+      "src": "[[ ./images/Icon_Family_144.png ]]",
       "sizes": "144x144",
       "type": "image/png"
     }, {
-      "src": "[[ ./res/images/Icon_Family_152.png ]]",
+      "src": "[[ ./images/Icon_Family_152.png ]]",
       "sizes": "152x152",
       "type": "image/png"
     }, {
-      "src": "[[ ./res/images/Icon_Family_192.png ]]",
+      "src": "[[ ./images/Icon_Family_192.png ]]",
       "sizes": "192x192",
       "type": "image/png"
     }, {
-      "src": "[[ ./res/images/Icon_Family_256.png ]]",
+      "src": "[[ ./images/Icon_Family_256.png ]]",
       "sizes": "256x256",
       "type": "image/png"
     }, {
-      "src": "[[ ./res/images/intro-anxiety.png ]]",
+      "src": "[[ ./images/intro-anxiety.png ]]",
       "sizes": "480x360",
       "type": "image/png"
     }, {
-      "src": "[[ ./res/images/intro-depression.png ]]",
+      "src": "[[ ./images/intro-depression.png ]]",
       "sizes": "480x360",
       "type": "image/png"
     }, {
-      "src": "[[ ./res/images/intro-panic.png ]]",
+      "src": "[[ ./images/intro-panic.png ]]",
       "sizes": "480x360",
       "type": "image/png"
     }, {
-      "src": "[[ ./res/images/intro-resilience.png ]]",
+      "src": "[[ ./images/intro-resilience.png ]]",
       "sizes": "480x360",
       "type": "image/png"
     }, {
-      "src": "[[ ./res/images/intro-stress.png ]]",
+      "src": "[[ ./images/intro-stress.png ]]",
       "sizes": "480x360",
       "type": "image/png"
     }, {
-      "src": "[[ ./res/images/intro-worry.png ]]",
+      "src": "[[ ./images/intro-worry.png ]]",
       "sizes": "480x360",
       "type": "image/png"
     }],

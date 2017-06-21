@@ -55,7 +55,7 @@ export const assessmentsDataJ = [
       ]
     ],
     "scoringMode"   : 0,
-    "image"         : require('../images/intro-worry.png'),
+    "image"         : 'intro-worry.png',
     "choices"       : [
           [
             {title: 'Never', value: '0', score: 0},
@@ -106,7 +106,7 @@ export const assessmentsDataJ = [
       ]
     ],
     "scoringMode"   : 0,
-    "image"         : require('../images/intro-stress.png'),
+    "image"         : 'intro-stress.png',
     "choices"       : [
           [
             {title: 'Never', value: '0', score: 0},
@@ -158,7 +158,7 @@ export const assessmentsDataJ = [
       ]  
     ],
     "scoringMode"   : 1,
-    "image"         : require('../images/intro-panic.png'),
+    "image"         : 'intro-panic.png',
     "choices"       : [
           [
             {title: 'Yes', value: '1', score: 1},
@@ -215,7 +215,7 @@ export const assessmentsDataJ = [
       ]  
     ],
     "scoringMode"   : 0,
-    "image"         : require('../images/intro-depression.png'),
+    "image"         : 'intro-depression.png',
     "choices"       : [
           [
             {title: 'Not at all', value: '1', score: 0},
@@ -257,7 +257,7 @@ export const assessmentsDataJ = [
       ]  
     ],
     "scoringMode"   : 1,
-    "image"         : require('../images/intro-anxiety.png'),
+    "image"         : 'intro-anxiety.png',
     "choices"       : [
           [
             {title: 'Not at all', value: '1', score: 0},
@@ -295,7 +295,7 @@ export const assessmentsDataJ = [
       ]  
     ],
     "scoringMode"   : 1,
-    "image"         : require('../images/intro-resilience.png'),
+    "image"         : 'intro-resilience.png',
     "choices"       : [
           [
             {title: 'Exactly Like Me - 4', value: '4', score: 4},
