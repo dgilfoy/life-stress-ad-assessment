@@ -17,14 +17,13 @@ export interface State {
 // State is never set so we use the 'undefined' type.
 export default class AssessmentModules extends React.Component<Props, State> {
     componentWillMount () {
-      this.props.appBarTitle('Assessment Modules');
+      this.props.appBarTitle('Assessment Topics');
     }
     componentWillReceiveProps(nextProps){ //not necessary unless title changes
-      this.props.appBarTitle('Assessment Modules');
+      this.props.appBarTitle('Assessment Topics');
     }
     render() {
       const {modules,pathOnTouchTap,cols} = this.props;
-      console.log(this.props);
       return (
 
           <GridList

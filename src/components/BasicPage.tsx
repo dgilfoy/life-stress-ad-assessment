@@ -51,7 +51,7 @@ export default class BasicPage extends React.Component<Props, State> {
                     {cardHeader}
                     
                     <CardText>
-                      {page.content}
+                      <div dangerouslySetInnerHTML={{__html: page.content}} />
                       {this.props.children}
                     </CardText>
                     <CardActions>

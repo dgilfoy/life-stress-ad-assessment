@@ -27,7 +27,7 @@ export default {
   '4': {
     id: '4',
     name: 'Library',
-    routes: ['/main/library'],
+    routes: [new RegExp('/main/library/[0-9]+')],
     pathname: '/main/library',
     level: 1,
     childrenIds: []

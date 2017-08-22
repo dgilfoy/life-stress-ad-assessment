@@ -1,4 +1,4 @@
-export const testBobVids = [
+export const alcoholDrugsVids = [
 {
     "id":1,
     "img":"1041122098001_1125537389001_vs-1125522077001.jpg",

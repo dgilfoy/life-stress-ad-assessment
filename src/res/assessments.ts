@@ -181,7 +181,7 @@ class Assessment{
       adata['scoringMode'],
       this.getScoring(adata['scoring']),
       this.getQuestions(adata['questions'],adata['choices']),
-      adata['image']
+      require('../images/'+adata['image'])
     );
   }
 }

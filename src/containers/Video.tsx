@@ -6,7 +6,7 @@ import { push } from 'react-router-redux';
 
 const stateToProps = (state, ownProps) => {
   let module = modules.filter(mod => ( parseInt(ownProps.params.mid) === mod.id)),
-    modVidsStr = module[0].videos,
+    modVidsStr = module[0].slug,
     vids = videos[modVidsStr + 'Vids']
   return {
     video: vids[ownProps.params.id],

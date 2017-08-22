@@ -94,8 +94,8 @@ const quickRoutes = [
 
 const mainSubRoutes = [
 
-  asyncRoute('library',System.import('./containers/Book')),
-  asyncRoute('library/:open',System.import('./containers/Book')),
+  asyncRoute('library/:id',System.import('./containers/Book')),
+  asyncRoute('library/:id/:open',System.import('./containers/Book')),
   asyncRoute('assessments/:id',System.import('./containers/Assessments')),
   asyncRoute('assessment/:id',System.import('./containers/Assessment')),
   asyncRoute('assessmentresult/:id',System.import('./containers/AssessmentResult')),
