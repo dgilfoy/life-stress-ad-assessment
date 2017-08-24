@@ -8,7 +8,7 @@ export const modules = [
     `
   },
   {
-    id: 2, title: 'Alcohol & Drugs', img: 'intro-alcohol.jpg', assessments: [7,8,4,5,3,25,20], slug : 'alcoholDrugs',
+    id: 2, title: 'Alcohol & Drugs', img: 'ad_alcohol_topics_lg.png', assessments: [7,8,4,5,3,25,20], slug : 'alcoholDrugs',
     content: `<p>
       It's common for service members to use alcohol. However, excessive drinking can cause problems in relationships, trouble fulfilling duties because of intoxication, and financial and legal difficulties. In a survey conducted between 2004 and 2006, twenty-one percent of service members admitted to drinking heavily, and another seven percent of veterans reported a substance abuse problem in the year prior to the survey.
       </p>
@@ -59,7 +59,7 @@ export const modules = [
     `
   },
   {
-    id: 9, title: 'Physical Injury', img: 'intro-injury.png', assessments: [25,4,7,13,22], slug : 'alcoholDrugs',
+    id: 9, title: 'Physical Injury', img: 'ad_injury_topics_lg.png', assessments: [25,4,7,13,22], slug : 'alcoholDrugs',
     content: `<p>
     Injuries challenge almost everything we thought we knew about ourselves. There are almost as many reactions to injuries as there are injured service members. What makes the difference between someone who survives, grows, and ultimately thrives in the presence of a serious injury and someone who doesn't? Our material on Physical Injury is designed to help you begin to answer that question. If you are caring for someone with a physical injury you can take an assessment to get feedback on how you are doing or jump into the workshops to learn about managing feelings about physical injuries and adapting. Check out the videos of others who are dealing with physical injuries, and explore the e-library for in-depth information.
     </p>

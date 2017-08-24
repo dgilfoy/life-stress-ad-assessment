@@ -451,8 +451,8 @@ export const assessmentsDataJ = [
   }, // everything above this is/should be done
   {
     "id"            : 9,
-    "title"         : "MTBI",
-    "questionPrefix": "",
+    "title"         : "MTBI",  // apparently this is not used in any of the current topics - holding off on adding questions just yet
+    "questionPrefix": "How confident are you that you can…",
     "maxScore"      : 130,
     "midScore"      : 60,
     "minScore"      : 0,
@@ -474,16 +474,32 @@ export const assessmentsDataJ = [
     "image"         : 'intro-mtbi.png',
     "choices"       : [
           [
-            {title: 'Never', value: '0', score: 0},
-            {title: 'Almost Never', value: '1', score: 1},
-            {title: 'Sometimes', value: '2', score: 2},
-            {title: 'Fairly often', value: '3', score: 3},
-            {title: 'Very often', value: '4', score: 4}
+            {title: 'Confident', value: '1', score: 1},
+            {title: '', value: '2', score: 2},
+            {title: '', value: '3', score: 3},
+            {title: '', value: '4', score: 4},
+            {title: '', value: '5', score: 5},
+            {title: '', value: '6', score: 6},
+            {title: '', value: '7', score: 7},
+            {title: '', value: '8', score: 8},
+            {title: '', value: '9', score: 9},
+            {title: 'Not at all Confident', value: '10', score: 10}
           ]
     ],
     "questions"     :[
-      [1,'If I do not have enough time to do everything, I do not worry about it.','select',0],
-      [2,'My worries overwhelm me.','select',0]
+      [1,'Get family and friends to help you with things you need to do around your home (such as household chores, shopping, paying bills, or transportation)?','select',0],
+      [2,'Get emotional support from friends and family (such as listening to you or talking over your concerns)?','select',0],
+      [3,' Get emotional support from people other than friends or family, if needed? ','select',0],
+      [4,'Get help with your daily tasks (like housecleaning, yard work, shopping) from resources other than family or friends, if needed?','select',0],
+      [5,'Keep any physical symptoms caused by your injury (such as fatigue, dizziness, or difficulty walking) from interfering with the things that you want to do?','select',0],
+      [6,'Keep any problems with concentration caused by your injury from interfering with the things that you want to do? ','select',0],
+      [7,'Keep any problems with memory caused by your injury from interfering with the things that you want todo? ','select',0],
+      [8,'Keep any problems with thinking caused by your injury from interfering with the things that you want to do? ','select',0],
+      [9,'Compensate for any cognitive difficulties caused by your injury so that they don’t interfere with the things that you want to do?','select',0],
+      [10,'Keep from feeling frustrated or overwhelmed by things that you are trying to do? ','select',0],
+      [11,'Keep from feeling sad or discouraged?','select',0],
+      [12,'Keep from feeling lonely?','select',0],
+      [13,'Do something to control your emotions or make yourself feel better? ','select',0]
     ]
   },
   {
@@ -511,23 +527,32 @@ export const assessmentsDataJ = [
     "image"         : 'intro-anger.png',
     "choices"       : [
           [
-            {title: 'Never', value: '0', score: 0},
-            {title: 'Almost Never', value: '1', score: 1},
-            {title: 'Sometimes', value: '2', score: 2},
-            {title: 'Fairly often', value: '3', score: 3},
-            {title: 'Very often', value: '4', score: 4}
+            {title: '0 - Not at all', value: '1', score: 0},
+            {title: '1', value: '2', score: 1},
+            {title: '2', value: '3', score: 2},
+            {title: '3', value: '4', score: 3},
+            {title: '4', value: '5', score: 4},
+            {title: '5', value: '6', score: 5},
+            {title: '6', value: '7', score: 6},
+            {title: '7', value: '8', score: 7},
+            {title: '8 - Exactly So', value: '9', score: 8}
           ]
     ],
     "questions"     :[
-      [1,'If I do not have enough time to do everything, I do not worry about it.','select',0],
-      [2,'My worries overwhelm me.','select',0]
+      [1,'I often find myself getting angry at people or situations.','select',0],
+      [2,'When I get angry, I get really mad.','select',0],
+      [3,'When I get angry, I stay angry.','select',0],
+      [4,'When I get angry at someone, I want to hit or clobber the person.','select',0],
+      [5,'My anger interferes with my ability to get my work done.','select',0],
+      [6,'My anger prevents me from getting along with people as well as I would like to.','select',0],
+      [7,'My anger has a bad effect on my health.','select',0]
     ]
   },
   {
     "id"            : 11,
     "title"         : "Marital Satisfaction",
     "questionPrefix": "",
-    "maxScore"      : 100,
+    "maxScore"      : 158,
     "midScore"      : 85,
     "minScore"      : 0,
     "scoring"       : [
@@ -548,16 +573,88 @@ export const assessmentsDataJ = [
     "image"         : 'intro-marital.png',
     "choices"       : [
           [
-            {title: 'Never', value: '0', score: 0},
-            {title: 'Almost Never', value: '1', score: 1},
-            {title: 'Sometimes', value: '2', score: 2},
-            {title: 'Fairly often', value: '3', score: 3},
-            {title: 'Very often', value: '4', score: 4}
+            {title: 'Very Unhappy', value: '1', score: 0},
+            {title: 'Somewhat Unhappy', value: '2', score: 2},
+            {title: 'Slightly Unhappy', value: '3', score: 7},
+            {title: 'Happy', value: '4', score: 15},
+            {title: 'Pretty Happy', value: '5', score: 20},
+            {title: 'Very Happy', value: '6', score: 25},
+            {title: 'Perfectly Happy', value: '7', score: 35}
+          ],
+          [
+            {title: 'Always Agree', value: '1', score: 5},
+            {title: 'Almost Always Agree', value: '2', score: 4},
+            {title: 'Occasionally Disagree', value: '3', score: 3},
+            {title: 'Frequently Disagree', value: '4', score: 2},
+            {title: 'Almost Always Disagree', value: '5', score: 1},
+            {title: 'Always Disagree', value: '6', score: 0}
+          ],
+          [
+            {title: 'Always Agree', value: '1', score: 8},
+            {title: 'Almost Always Agree', value: '2', score: 6},
+            {title: 'Occasionally Disagree', value: '3', score: 4},
+            {title: 'Frequently Disagree', value: '4', score: 2},
+            {title: 'Almost Always Disagree', value: '5', score: 1},
+            {title: 'Always Disagree', value: '6', score: 0}
+          ],
+          [
+            {title: 'Always Agree', value: '1', score: 15},
+            {title: 'Almost Always Agree', value: '2', score: 12},
+            {title: 'Occasionally Disagree', value: '3', score: 9},
+            {title: 'Frequently Disagree', value: '4', score: 4},
+            {title: 'Almost Always Disagree', value: '5', score: 1},
+            {title: 'Always Disagree', value: '6', score: 0}
+          ],
+          [
+            {title: 'husband giving in', value: '1', score: 0},
+            {title: 'wife giving in', value: '2', score: 2},
+            {title: 'agreement by mutual give and take', value: '3', score: 10}
+          ],
+          [
+            {title: 'All of them', value: '1', score: 10},
+            {title: 'Some of them', value: '2', score: 8},
+            {title: 'Very few of them', value: '3', score: 3},
+            {title: 'None of them', value: '4', score: 0}
+          ],
+          [
+            {title: 'to both be "On the go" ', value: '1', score: 3},
+            {title: 'to both be stay at home ', value: '2', score: 10},
+            {title: 'neither', value: '3', score: 2}
+          ],
+          [
+            {title: 'Frequently', value: '1', score: 0},
+            {title: 'Occasionally', value: '2', score: 3},
+            {title: 'Rarely', value: '3', score: 8},
+            {title: 'Never', value: '4', score: 15}
+          ],
+          [
+            {title: 'Marry the same person', value: '1', score: 15},
+            {title: 'Marry a different person', value: '2', score: 0},
+            {title: 'Not marry at all', value: '3', score: 1}
+          ],
+          [
+            {title: 'almost never', value: '1', score: 0},
+            {title: 'rarely', value: '2', score: 2},
+            {title: 'in most things', value: '3', score: 10},
+            {title: 'in everything', value: '4', score: 10}   
           ]
     ],
     "questions"     :[
-      [1,'If I do not have enough time to do everything, I do not worry about it.','select',0],
-      [2,'My worries overwhelm me.','select',0]
+      [1,'Which describes the degree of happiness of your present marriage?','select',0],
+      [2,'Handling Family Finances','select',1],
+      [3,'Matters of Recreation','select',1],
+      [4,'Demonstration of Affection','select',2],
+      [5,'Friends','select',1],
+      [6,'Sex Relations','select',3],
+      [7,'Conventionality (right, good, or proper conduct)','select',1],
+      [8,'Philosophy of Life','select',1],
+      [9,'Ways of dealing with in-laws','select',1],
+      [10,'When disagreements arise, they usually result in:','select',4],
+      [11,'Do you and your mate engage in outside interests together?','select',5],
+      [12,'In leisure time do you generally prefer:','select',6],
+      [13,'Do you ever wish you had not married?','select',7],
+      [14,'If you had your life to live over again, do you think you would:','select',8],
+      [14,'Do you ever confide in your mate:','select',9]
     ]
   },
   {
@@ -585,16 +682,20 @@ export const assessmentsDataJ = [
     "image"         : 'intro-friendship.png',
     "choices"       : [
           [
-            {title: 'Never', value: '0', score: 0},
-            {title: 'Almost Never', value: '1', score: 1},
-            {title: 'Sometimes', value: '2', score: 2},
-            {title: 'Fairly often', value: '3', score: 3},
-            {title: 'Very often', value: '4', score: 4}
+            {title: 'Almost Always', value: '1', score: 4},
+            {title: 'Most of the time', value: '2', score: 3},
+            {title: 'About half the time', value: '3', score: 2},
+            {title: 'Occasionally', value: '4', score: 1},
+            {title: 'Not at all', value: '5', score: 0}
           ]
     ],
     "questions"     :[
-      [1,'If I do not have enough time to do everything, I do not worry about it.','select',0],
-      [2,'My worries overwhelm me.','select',0]
+      [1,'It has been easy to relate to others.','select',0],
+      [2,'I felt isolated from other people.','select',0],
+      [3,'I had someone to share my feelings with.','select',0],
+      [4,'I found it easy to get in touch with others when I needed to.','select',0],
+      [5,'When with other people, I felt separate from them.','select',0],
+      [6,'I felt alone and friendless.','select',0]
     ]
   },
   {
@@ -621,17 +722,39 @@ export const assessmentsDataJ = [
     "scoringMode"   : 0,
     "image"         : 'intro-optimism.png',
     "choices"       : [
-          [
-            {title: 'Never', value: '0', score: 0},
-            {title: 'Almost Never', value: '1', score: 1},
-            {title: 'Sometimes', value: '2', score: 2},
-            {title: 'Fairly often', value: '3', score: 3},
-            {title: 'Very often', value: '4', score: 4}
-          ]
+      [
+        {title: 'Strongly disagree', value: '1', score: 0},
+        {title: 'Disagree', value: '2', score: 1},
+        {title: 'Neutral', value: '3', score: 2},
+        {title: 'Agree', value: '4', score: 3},
+        {title: 'Strongly Agree', value: '5', score: 4},
+      ],
+      [
+        {title: 'Strongly disagree', value: '1', score: 4},
+        {title: 'Disagree', value: '2', score: 3},
+        {title: 'Neutral', value: '3', score: 2},
+        {title: 'Agree', value: '4', score: 1},
+        {title: 'Strongly Agree', value: '5', score: 0},
+      ],
+      [
+        {title: 'Strongly disagree', value: '1', score: 0},
+        {title: 'Disagree', value: '2', score: 0},
+        {title: 'Neutral', value: '3', score: 0},
+        {title: 'Agree', value: '4', score: 0},
+        {title: 'Strongly Agree', value: '5', score: 0}
+      ]
     ],
     "questions"     :[
-      [1,'If I do not have enough time to do everything, I do not worry about it.','select',0],
-      [2,'My worries overwhelm me.','select',0]
+      [1,'In uncertain times, I usually expect the best.','select',1],
+      [2,'It\'s easy for me to relax.','select',2],
+      [3,'If something can go wrong for me it will.','select',1],
+      [4,'I am always optimistic about my future','select',0],
+      [5,'I enjoy my friends a lot.','select',2],
+      [6,'It\'s important for me to keep busy.','select',2],
+      [7,'I hardly ever expect things to go my way.','select',1],
+      [8,'I don\'t get upset too easily.','select',2],
+      [9,'I rarely count on good things happening to me.','select',1],
+      [10,'Overall, I expect more good things to happen to me than bad.','select',0]
     ]
   },
   {
@@ -659,16 +782,45 @@ export const assessmentsDataJ = [
     "image"         : 'intro-parenting.png',
     "choices"       : [
           [
-            {title: 'Never', value: '0', score: 0},
-            {title: 'Almost Never', value: '1', score: 1},
-            {title: 'Sometimes', value: '2', score: 2},
-            {title: 'Fairly often', value: '3', score: 3},
-            {title: 'Very often', value: '4', score: 4}
+            {title: 'Mother', value: '1', score: 0},
+            {title: 'Father', value: '2', score: 0},
+            {title: 'Other', value: '3', score: 0}
+          ],
+          [
+            {title: 'Strongly Agree', value: '1', score: 1},
+            {title: 'Agree', value: '2', score: 2},
+            {title: 'Mildly Agree', value: '3', score: 3},
+            {title: 'Mildly Disagree', value: '4', score: 4},
+            {title: 'Disagree', value: '5', score: 5},
+            {title: 'Strongly Disagree', value: '6', score: 6}
+          ],
+          [
+            {title: 'Strongly Agree', value: '1', score: 6},
+            {title: 'Agree', value: '2', score: 5},
+            {title: 'Mildly Agree', value: '3', score: 4},
+            {title: 'Mildly Disagree', value: '4', score: 3},
+            {title: 'Disagree', value: '5', score: 2},
+            {title: 'Strongly Disagree', value: '6', score: 1}
           ]
     ],
     "questions"     :[
-      [1,'If I do not have enough time to do everything, I do not worry about it.','select',0],
-      [2,'My worries overwhelm me.','select',0]
+      [1,'Are you a Mother/Father/Other?','select',0],
+      [2,'The problems of taking care of a child are easy to solve once you know how your actions affect your child, an understanding I have acquired.','select',2],
+      [3,'Even though being a parent could be rewarding, I am frustrated now while my child is at his/her present age.','select',1],
+      [4,'I go to bed the same way I wake up in the morning—feeling I have not accomplished a whole lot.','select',1],
+      [5,'I do not know what it is, but sometimes when I’m supposed to be in control, I feel more like the one being manipulated.','select',1],
+      [6,'My parent was better prepared to be a good parent than I am.','select',1],
+      [7,'I would make a fine model for a new parent to follow in order to learn what she/he would need to know in order to be a good parent.','select',2],
+      [8,'Being a parent is manageable, and any problems are easily solved.','select',2],
+      [9,'A difficult problem in being a parent is not knowing whether you’re doing a good job or a bad one.','select',1],
+      [10,'Sometimes I feel like I’m not getting anything done.','select',1],
+      [11,'I meet my own personal expectations for expertise in caring for my child.','select',2],
+      [12,'If anyone can find the answer to what is troubling my child, I am the one.','select',2],
+      [13,'My talents and interests are in other areas, not in being a parent.','select',1],
+      [14,' Considering how long I’ve been a parent, I feel thoroughly familiar with this role.','select',2],
+      [15,'If being a parent of a child were only more interesting, I would be motivated to do a better job as a parent.','select',1],
+      [16,' I honestly believe I have all the skills necessary to be a good parent to my child.','select',2],
+      [17,'Being a parent makes me tense and anxious.','select',1]
     ]
   },
   {
@@ -696,16 +848,28 @@ export const assessmentsDataJ = [
     "image"         : 'intro-perceived-support.png',
     "choices"       : [
           [
-            {title: 'Never', value: '0', score: 0},
-            {title: 'Almost Never', value: '1', score: 1},
-            {title: 'Sometimes', value: '2', score: 2},
-            {title: 'Fairly often', value: '3', score: 3},
-            {title: 'Very often', value: '4', score: 4}
+            {title: 'Very Strongly Disagree', value: '1', score: 1},
+            {title: 'Strongly Disagree', value: '2', score: 2},
+            {title: 'Mildly Disagree', value: '3', score: 3},
+            {title: 'Neutral', value: '4', score: 4},
+            {title: 'Mildly Agree', value: '5', score: 5},
+            {title: 'Strongly Agree', value: '6', score: 6},
+            {title: 'Very Strongly Agree', value: '7', score: 7}
           ]
     ],
     "questions"     :[
-      [1,'If I do not have enough time to do everything, I do not worry about it.','select',0],
-      [2,'My worries overwhelm me.','select',0]
+      [1,'There is a special person who is around when I am in need.','select',0],
+      [2,'There is a special person with whom I can share my joys and sorrows.','select',0],
+      [3,'My family really tries to help me.','select',0],
+      [4,'I get the emotional help and support I need from my family.','select',0],
+      [5,'I have a special person who is a real source of comfort to me.','select',0],
+      [6,'My friends really try to help me.','select',0],
+      [7,'I can count on my friends when things go wrong.','select',0],
+      [8,'I can talk about my problems with my family.','select',0],
+      [9,'I have friends with whom I can share my joys and sorrows.','select',0],
+      [10,'There is a special person in my life who cares about my feelings.','select',0],
+      [11,'My family is willing to help me make decisions.','select',0],
+      [12,'I can talk about my problems with my friends.','select',0]
     ]
   },
   {
@@ -733,16 +897,31 @@ export const assessmentsDataJ = [
     "image"         : 'intro-stigma.png',
     "choices"       : [
           [
-            {title: 'Never', value: '0', score: 0},
-            {title: 'Almost Never', value: '1', score: 1},
-            {title: 'Sometimes', value: '2', score: 2},
-            {title: 'Fairly often', value: '3', score: 3},
-            {title: 'Very often', value: '4', score: 4}
+            {title: 'Strongly disagree', value: '1', score: 1},
+            {title: 'Disagree', value: '2', score: 2},
+            {title: 'Agree and Disagree Equally', value: '3', score: 3},
+            {title: 'Agree', value: '4', score: 4},
+            {title: 'Strongly agree', value: '5', score: 5}
+          ],
+          [
+            {title: 'Strongly disagree', value: '1', score: 5},
+            {title: 'Disagree', value: '2', score: 4},
+            {title: 'Agree and Disagree Equally', value: '3', score: 3},
+            {title: 'Agree', value: '4', score: 2},
+            {title: 'Strongly agree', value: '5', score: 1}
           ]
     ],
     "questions"     :[
-      [1,'If I do not have enough time to do everything, I do not worry about it.','select',0],
-      [2,'My worries overwhelm me.','select',0]
+      [1,'I would feel inadequate if I went to a therapist for psychological help.','select',0],
+      [2,'My self-confidence would NOT be threatened if I sought professional help.','select',1],
+      [3,'Seeking psychological help would make me feel less intelligent.','select',0],
+      [4,'My self-esteem would increase if I talked to a therapist.','select',1],
+      [5,'My view of myself would not change just because I made the choice to see a therapist.','select',1],
+      [6,'It would make me feel inferior to ask a therapist for help.','select',0],
+      [7,'I would feel okay about myself if I made the choice to seek professional help.','select',1],
+      [8,'If I went to a therapist, I would be less satisfied with myself.','select',0],
+      [9,'My self-confidence would remain the same if I sought professional help for a problem I could not solve.','select',1],
+      [10,'I would feel worse about myself if I could not solve my own problems.','select',0]
     ]
   },
   {
@@ -770,16 +949,23 @@ export const assessmentsDataJ = [
     "image"         : 'intro-work.png',
     "choices"       : [
           [
-            {title: 'Never', value: '0', score: 0},
-            {title: 'Almost Never', value: '1', score: 1},
-            {title: 'Sometimes', value: '2', score: 2},
-            {title: 'Fairly often', value: '3', score: 3},
-            {title: 'Very often', value: '4', score: 4}
+            {title: 'Not at all True', value: '1', score: 1},
+            {title: 'Somewhat True', value: '2', score: 2},
+            {title: 'Moderately True', value: '3', score: 3},
+            {title: 'Very True', value: '4', score: 4}
           ]
     ],
     "questions"     :[
-      [1,'If I do not have enough time to do everything, I do not worry about it.','select',0],
-      [2,'My worries overwhelm me.','select',0]
+      [1,'I can always manage to solve difficult problems if I try hard enough. ','select',0],
+      [2,'If someone opposes me, I can find the means and ways to get what I want.','select',0],
+      [3,'It is easy for me to stick to my aims and accomplish my goals.','select',0],
+      [4,'I am confident that I could deal efficiently with unexpected events.','select',0],
+      [5,'Thanks to my resourcefulness, I know how to handle unforeseen situations.','select',0],
+      [6,'I can solve most problems if I invest the necessary effort.','select',0],
+      [7,'I can remain calm when facing difficulties because I can rely on my coping abilities.','select',0],
+      [8,'When I am confronted with a problem, I can usually find several solutions.','select',0],
+      [9,'If I am in trouble, I can usually think of a solution.','select',0],
+      [10,'I can usually handle whatever comes my way.','select',0]
     ]
   },
   {
@@ -807,16 +993,21 @@ export const assessmentsDataJ = [
     "image"         : 'intro-hope.png',
     "choices"       : [
           [
-            {title: 'Never', value: '0', score: 0},
-            {title: 'Almost Never', value: '1', score: 1},
-            {title: 'Sometimes', value: '2', score: 2},
-            {title: 'Fairly often', value: '3', score: 3},
-            {title: 'Very often', value: '4', score: 4}
+            {title: 'Definitely False', value: '1', score: 1},
+            {title: 'Mostly False', value: '2', score: 2},
+            {title: 'Mostly True', value: '3', score: 3},
+            {title: 'Definitely True', value: '4', score: 4}
           ]
     ],
     "questions"     :[
-      [1,'If I do not have enough time to do everything, I do not worry about it.','select',0],
-      [2,'My worries overwhelm me.','select',0]
+      [1,'I energetically pursue my goals.','select',0],
+      [2,'I can think of many ways to get out of a jam.','select',0],
+      [3,'My past experiences have prepared me well for my future.','select',0],
+      [4,'There are lots of ways around any problem.','select',0],
+      [5,'I\'ve been pretty successful in life.','select',0],
+      [6,'I can think of many ways to get the things in life that are important to me.','select',0],
+      [7,'I meet the goals that I set for myself.','select',0],
+      [8,'Even when others get discouraged, I know I can find a way to solve the problem.','select',0]
     ]
   },
   {
@@ -844,16 +1035,25 @@ export const assessmentsDataJ = [
     "image"         : 'intro-generosity.png',
     "choices"       : [
           [
-            {title: 'Never', value: '0', score: 0},
-            {title: 'Almost Never', value: '1', score: 1},
-            {title: 'Sometimes', value: '2', score: 2},
-            {title: 'Fairly often', value: '3', score: 3},
-            {title: 'Very often', value: '4', score: 4}
+            {title: 'Strongly Agree', value: '1', score: 6},
+            {title: 'Agree', value: '2', score: 5},
+            {title: 'Mildly Agree', value: '3', score: 4},
+            {title: 'Mildly Disagree', value: '4', score: 3},
+            {title: 'Disagree', value: '5', score: 2},
+            {title: 'Strongly Disagree', value: '6', score: 1}
           ]
     ],
     "questions"     :[
-      [1,'If I do not have enough time to do everything, I do not worry about it.','select',0],
-      [2,'My worries overwhelm me.','select',0]
+      [1,'When one of my loved ones needs my attention, I really try to slow down and give them the time and help they need.','select',0],
+      [2,'I am known by family and friends as someone who makes time to pay attention to others\' problems.','select',0],
+      [3,'I\'m the kind of person who is willing to go the "extra mile" to help take care of my friends, relatives, and acquaintances.','select',0],
+      [4,'When friends or family members experience something upsetting or discouraging, I make a special point of being kind to them.','select',0],
+      [5,'When it comes to my personal relationships with others, I am a very generous person.','select',0],
+      [6,'It makes me very happy to give to other people in ways that meet their needs.','select',0],
+      [7,'It is just as important to me that other people around me are happy and thriving as it is that I am happy and thriving.','select',0],
+      [8,'My decisions are often based on concern for the welfare of others.','select',0],
+      [9,'I am usually willing to risk my own feelings being hurt in the process if I stand a chance of helping someone else I need.','select',0],
+      [10,'I make it a point to let my friends and family know how much I love and appreciate them.','select',0]
     ]
   },
   {
@@ -881,16 +1081,21 @@ export const assessmentsDataJ = [
     "image"         : 'intro-sleep.png',
     "choices"       : [
           [
-            {title: 'Never', value: '0', score: 0},
-            {title: 'Almost Never', value: '1', score: 1},
-            {title: 'Sometimes', value: '2', score: 2},
-            {title: 'Fairly often', value: '3', score: 3},
-            {title: 'Very often', value: '4', score: 4}
+            {title: 'True', value: '1', score: 1},
+            {title: 'False', value: '2', score: 0}
           ]
     ],
     "questions"     :[
-      [1,'If I do not have enough time to do everything, I do not worry about it.','select',0],
-      [2,'My worries overwhelm me.','select',0]
+      [1,'I feel sleepy during the day, even when I get a good night\'s sleep.','select',0],
+      [2,'I get very irritable when I can\'t sleep.','select',0],
+      [3,'I often wake up at night and have trouble falling back to sleep.','select',0],
+      [4,'It usually takes me a long time to fall asleep.','select',0],
+      [5,'I often wake up very early and can\'t fall back to sleep.','select',0],
+      [6,'I usually feel achy and stiff when I wake up in the morning.','select',0],
+      [7,'I often seem to wake up because of dreams.','select',0],
+      [8,'I sometimes wake up gasping for breath.','select',0],
+      [9,'My bed partner says my snoring keeps her/him from sleeping.','select',0],
+      [10,'I\'ve fallen asleep driving.','select',0]
     ]
   },
   {
@@ -926,8 +1131,8 @@ export const assessmentsDataJ = [
           ]
     ],
     "questions"     :[
-      [1,'If I do not have enough time to do everything, I do not worry about it.','select',0],
-      [2,'My worries overwhelm me.','select',0]
+      [1,'','select',0],
+      [2,'','select',0]
     ]
   },
   {
@@ -955,16 +1160,43 @@ export const assessmentsDataJ = [
     "image"         : 'intro-forgiveness.png',
     "choices"       : [
           [
-            {title: 'Never', value: '0', score: 0},
-            {title: 'Almost Never', value: '1', score: 1},
-            {title: 'Sometimes', value: '2', score: 2},
-            {title: 'Fairly often', value: '3', score: 3},
-            {title: 'Very often', value: '4', score: 4}
+            {title: '1 - Almost always false of me.', value: '1', score: 1},
+            {title: '2', value: '2', score: 2},
+            {title: '3 - More often false of me', value: '3', score: 3},
+            {title: '4', value: '4', score: 4},
+            {title: '5 - More often true of me', value: '5', score: 5},
+            {title: '6', value: '6', score: 6},
+            {title: '7 - Almost always true of me', value: '7', score: 7}
+          ],
+          [
+            {title: '1 - Almost always false of me.', value: '1', score: 7},
+            {title: '2', value: '2', score: 6},
+            {title: '3 - More often false of me', value: '3', score: 5},
+            {title: '4', value: '4', score: 4},
+            {title: '5 - More often true of me', value: '5', score: 3},
+            {title: '6', value: '6', score: 2},
+            {title: '7 - Almost always true of me', value: '7', score: 1} 
           ]
     ],
     "questions"     :[
-      [1,'If I do not have enough time to do everything, I do not worry about it.','select',0],
-      [2,'My worries overwhelm me.','select',0]
+      [1,'Although I feel bad at first when I mess up, over time I can give myself some slack','select',0],
+      [2,'I hold grudges against myself for negative things I\'ve done.','select',1],
+      [3,'Learning from bad things that I\'ve done helps me get over them.','select',0],
+      [4,'It is really hard for me to accept myself once I\'ve messed up.','select',1],
+      [5,'With time I am understanding of myself for mistakes I\'ve made.','select',0],
+      [6,'I  don’t stop criticizing myself for negative things I\'ve felt, thought, said, or done.','select',1],
+      [7,'I continue to punish a person who has done something that I think is wrong.','select',1],
+      [8,'With time I am understanding of others for the mistakes they\'ve mad','select',0],
+      [9,'I continue to be hard on others who have hurt me.','select',1],
+      [10,'Although others have hurt me in the past, I have eventually been able to see them as good people.','select',0],
+      [11,'If others mistreat me, I continue to think badly of them.','select',1],
+      [12,'When someone disappoints me, I can eventually move past it.','select',0],
+      [13,'When things go wrong for reasons that can\'t be controlled, I get stuck in negative thoughts about it.','select',1],
+      [14,'With time I can be understanding of bad circumstances in my life.','select',0],
+      [15,'If I am disappointed by uncontrollable circumstances in my life, I continue to think negatively about them.','select',1],
+      [16,'I eventually make peace with bad situations in my life.','select',0],
+      [17,'It\'s really hard for me to accept negative situations that aren\'t anybody’s faut','select',1],
+      [18,'Eventually I let go of negative thoughts about bad circumstances that are beyond anyone\'s control.','select',1]
     ]
   },
   {
@@ -992,16 +1224,31 @@ export const assessmentsDataJ = [
     "image"         : 'intro-gratitude.png',
     "choices"       : [
           [
-            {title: 'Never', value: '0', score: 0},
-            {title: 'Almost Never', value: '1', score: 1},
-            {title: 'Sometimes', value: '2', score: 2},
-            {title: 'Fairly often', value: '3', score: 3},
-            {title: 'Very often', value: '4', score: 4}
+            {title: 'Strongly disagree', value: '1', score: 1},
+            {title: 'Disagree', value: '2', score: 2},
+            {title: 'Slightly disagree', value: '3', score: 3},
+            {title: 'Neutral', value: '4', score: 4},
+            {title: 'Slightly agree', value: '5', score: 5},
+            {title: 'Agree', value: '6', score: 6},
+            {title: 'Strongly Agree', value: '7', score: 7}
+          ],
+          [
+            {title: 'Strongly disagree', value: '1', score: 7},
+            {title: 'Disagree', value: '2', score: 6},
+            {title: 'Slightly disagree', value: '3', score: 5},
+            {title: 'Neutral', value: '4', score: 4},
+            {title: 'Slightly agree', value: '5', score: 3},
+            {title: 'Agree', value: '6', score: 2},
+            {title: 'Strongly Agree', value: '7', score: 1}
           ]
     ],
     "questions"     :[
-      [1,'If I do not have enough time to do everything, I do not worry about it.','select',0],
-      [2,'My worries overwhelm me.','select',0]
+      [1,'I have so much in life to be thankful for.','select',0],
+      [2,'If I had to list everything that I felt grateful for, it would be a very long list.','select',0],
+      [3,'When I look at the world, I don\'t see much to be grateful for','select',1],
+      [4,'I am grateful for a wide variety of people.','select',0],
+      [5,'As I get older, I find myself more able to appreciate the people, events, and situations that have been part of my life history.','select',0],
+      [6,'Long amounts of time can go by before I feel grateful to something or someone.','select',1]
     ]
   },
   {
@@ -1037,14 +1284,14 @@ export const assessmentsDataJ = [
           ]
     ],
     "questions"     :[
-      [1,'If I do not have enough time to do everything, I do not worry about it.','select',0],
-      [2,'My worries overwhelm me.','select',0]
+      [1,'','select',0],
+      [2,'','select',0]
     ]
   },
   {
     "id"            : 25,
     "title"         : "Phyisical Injury Resilience",
-    "questionPrefix": "",
+    "questionPrefix": "In response to the stress of my physical injury, I tend to. . . ",
     "maxScore"      : 88,
     "midScore"      : 50,
     "minScore"      : 0,
@@ -1066,16 +1313,35 @@ export const assessmentsDataJ = [
     "image"         : 'intro-injury.png',
     "choices"       : [
           [
-            {title: 'Never', value: '0', score: 0},
-            {title: 'Almost Never', value: '1', score: 1},
-            {title: 'Sometimes', value: '2', score: 2},
-            {title: 'Fairly often', value: '3', score: 3},
-            {title: 'Very often', value: '4', score: 4}
+            {title: 'Exactly Like Me - 4', value: '4', score: 4},
+            {title: '3', value: '3', score: 3},
+            {title: '2', value: '2', score: 2},
+            {title: 'Not At All Like Me - 1', value: '1', score: 1}
           ]
     ],
-    "questions"     :[
-      [1,'If I do not have enough time to do everything, I do not worry about it.','select',0],
-      [2,'My worries overwhelm me.','select',0]
+    "questions"     : [
+      [1,'Take action to fix things?','select',0],
+      [2,'Not give up trying to solve problems I think I can solve?','select',0],
+      [3,'Find a way to do what\'s necessary to carry on?','select',0],
+      [4,'Pray or meditate?','select',0],
+      [5,'Face my fears?','select',0],
+      [6,'Find opportunity for growth?','select',0],
+      [7,'Calm and comfort myself?','select',0],
+      [8,'Try to recharge myself before I have to face the next challenge?','select',0],
+      [9,'See it as a challenge that will make me better?','select',0],
+      [10,'Look at the problem in a number of ways?','select',0],
+      [11,'Look for creative solutions to the problem?','select',0],
+      [12,'Put things in perspective and realize I will have times of joy and times of sadness?','select',0],
+      [13,'Be good at determining which situations are changeable and which are not?','select',0],
+      [14,'Find meaning from the experience?','select',0],
+      [15,'Find strength in the meaning, purpose, or mission of my life?','select',0],
+      [16,'Know I will bounce back?','select',0],
+      [17,'Expect that I can handle it?','select',0],
+      [18,'Learn important and useful life lessons?','select',0],
+      [19,'Understand that bad things can happen to anyone, not just me?','select',0],
+      [20,'Lean on my faith in God or a higher power?','select',0],
+      [21,'Draw upon lessons learned from failures and past mistakes?','select',0],
+      [22,'Practice ways to handle it better next time?','select',0]
     ]
   },
   {
@@ -1103,16 +1369,40 @@ export const assessmentsDataJ = [
     "image"         : 'intro-pdss.png',
     "choices"       : [
           [
-            {title: 'Never', value: '0', score: 0},
-            {title: 'Almost Never', value: '1', score: 1},
-            {title: 'Sometimes', value: '2', score: 2},
-            {title: 'Fairly often', value: '3', score: 3},
-            {title: 'Very often', value: '4', score: 4}
+            {title: 'Strongly disagree', value: '1', score: 5},
+            {title: 'Disagree', value: '2', score: 4},
+            {title: 'Neither agree nor disagree', value: '3', score: 3},
+            {title: 'Agree', value: '4', score: 2},
+            {title: 'Strongly agree', value: '5', score: 1}
+          ],
+          [
+            {title: 'Strongly disagree', value: '1', score: 1},
+            {title: 'Disagree', value: '2', score: 2},
+            {title: 'Neither agree nor disagree', value: '3', score: 3},
+            {title: 'Agree', value: '4', score: 4},
+            {title: 'Strongly agree', value: '5', score: 5}  
           ]
     ],
     "questions"     :[
-      [1,'If I do not have enough time to do everything, I do not worry about it.','select',0],
-      [2,'My worries overwhelm me.','select',0]
+      [1,'The reception I received when I returned from my deployment made me feel appreciated for my efforts.','select',1],
+      [2,'The American people made me feel at home when I returned.','select',1],
+      [3,'When I returned, people made me feel proud to have served my country in the armed forces.','select',1],
+
+      [4,'I am carefully listened to and understood by family members or friends.','select',1],
+      [5,'Among my family or relatives, there is someone who makes me feel better when I am feeling down.','select',1],
+      [6,'I have problems that I can’t discuss with family or friends.','select',0],
+
+      [7,'Among my friends or relatives, there is someone I go to when I need good advice.','select',1],
+      [8,'People at home just don’t understand what I have been through in the armed forces.','select',0],
+      [9,'There are people to whom I can talk about my deployment experiences.','select',1],
+
+      [10,'The people I work with respect the fact that I am a veteran or service member.','select',1],
+      [11,'My supervisor understands when I need time to take off to take care of personal matters.','select',1],
+      [12,'My friends or relatives would lend me money if I needed it.','select',1],
+
+      [13,'My friends or relatives would help me move my belongings if I needed to.','select',1],
+      [14,'When I am unable to attend to daily chores, there is someone who will help me with these tasks.','select',1],
+      [15,'When I am ill, friends or family members will help out until I am well.','select',1]
     ]
   },
   {
@@ -1148,8 +1438,8 @@ export const assessmentsDataJ = [
           ]
     ],
     "questions"     :[
-      [1,'If I do not have enough time to do everything, I do not worry about it.','select',0],
-      [2,'My worries overwhelm me.','select',0]
+      [1,'','select',0],
+      [2,'','select',0]
     ]
   },
   {
@@ -1185,8 +1475,8 @@ export const assessmentsDataJ = [
           ]
     ],
     "questions"     :[
-      [1,'If I do not have enough time to do everything, I do not worry about it.','select',0],
-      [2,'My worries overwhelm me.','select',0]
+      [1,'','select',0],
+      [2,'','select',0]
     ]
   },
   {
@@ -1222,8 +1512,8 @@ export const assessmentsDataJ = [
           ]
     ],
     "questions"     :[
-      [1,'If I do not have enough time to do everything, I do not worry about it.','select',0],
-      [2,'My worries overwhelm me.','select',0]
+      [1,'','select',0],
+      [2,'','select',0]
     ]
   }
 ];
